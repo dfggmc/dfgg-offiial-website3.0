@@ -1,0 +1,11 @@
+header .logo {
+    width: 9.6rem;
+    height: 2.4rem;
+    padding-right: 10px;
+}
+
+.fa,
+.fas {
+    margin-left: 5px;
+    margin-right: 5px;
+}
