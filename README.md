@@ -1,4 +1,3 @@
 # dfggmc官网3.0
 
-## 内部版本，请勿二次分发！
-## Internal version, please do not distribute again
+## 使用Bootstrap  [v4.0.0-beta](https://getbootstrap.com)

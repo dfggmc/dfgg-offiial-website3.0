@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>dfggMC官网</title>
+    <title>dfggMC官网 - 主页</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
     <!-- Bootstrap CSS-->
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
     <!-- Custom Font Icons CSS-->
-    <link rel="stylesheet" href="css/landy-iconfont.css">
+    <link rel="stylesheet" href="/css/landy-iconfont.css">
     <!-- Google fonts - Open Sans-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
     <!-- owl carousel-->
@@ -19,10 +19,10 @@
     <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.css">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
-    <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
+    <!-- Custom stylesheet-->
+    <link rel="stylesheet" href="/css/custom.css">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="img/logo/DFGG LOGO2.0.jpg">
+    <link rel="shortcut icon" href="/img/logo/DFGG LOGO2.0.jpg">
     <!-- animate.css -->
     <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 </head>
@@ -63,14 +63,14 @@
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-cogs" aria-hidden="true"></i>更多
+                            <i class="fas fa-link" aria-hidden="true"></i>其他
                         </a>
                         <div class="dropdown-menu dropdown-menu-right animate__animated"
                             aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">选项1</a>
-                            <a class="dropdown-item" href="#">选项2</a>
+                            <a class="dropdown-item" href="/page/sponsored-list.html">赞助名单</a>
+                            <a class="dropdown-item" href="/page/server-history.html">服务器历史</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">其他</a>
+                            <a class="dropdown-item" mdui-dialog="{target: '#music-player-settings'}">音乐播放器设置</a>
                         </div>
                     </li>
                 </ul>
@@ -104,6 +104,7 @@
             </div>
         </div>
     </section>
+
     <section id="game-play" class="game-play bg-gray">
         <div class="container">
             <div class="row d-flex justify-content-center">
@@ -155,6 +156,7 @@
             </div>
         </div>
     </section>
+
     <section id="about-us" class="about-us">
         <div class="container">
             <h2>关于我们</h2>
@@ -173,12 +175,14 @@
                 class="btn btn-primary btn-shadow btn-gradient">了解更多！</a>
         </div>
     </section>
+
     <section id="notice" class="server-notice bg-gray">
         <div class="container">
             <h2 class="mb-5 text-center">公告 | 最新活动与更新</h2>
             <p class="text-center">获取服内实时动态！</p>
         </div>
     </section>
+
     <section id="comments" class="player-comments">
         <div class="container">
             <header class="text-center no-margin-bottom">
@@ -190,6 +194,7 @@
             <div class="owl-carousel owl-theme player-comments-container"></div>
         </div>
     </section>
+
     <section id="friends" class="friends bg-primary">
         <div class="container text-center">
             <header>
@@ -203,85 +208,29 @@
             <div class="grid row"></div>
         </div>
     </section>
+
+    
     <div id="scrollTop">
         <div class="d-flex align-items-center justify-content-end">
             <i class="fa-solid fa-arrow-up-long"></i>返回顶部
         </div>
     </div>
-    <footer class="main-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <a href="#" class="brand">联系方式：</a>
-                    <ul class="contact-info list-unstyled">
-                        <li>
-                            <a href="mailto:dfggmc@aliyun.com">阿里云邮箱</a>
-                        </li>
-                    </ul>
-                    <ul class="social-icons list-inline">
-                        <li class="list-inline-item">
-                            <a href="https://space.bilibili.com/1266698695" target="_blank" title="dfgg工作室">
-                                <i class="fa-brands fa-bilibili"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 ">
-                    <h5>一些链接</h5>
-                    <ul class="links list-unstyled">
-                        <li>
-                            <a href="https://bbs.dfggmc.top">dfgg bbs</a>
-                        </li>
-                        <li>
-                            <a href="https://space.bilibili.com/2068641947">服主b站首页</a>
-                        </li>
-                        <li>
-                            <a href="https://studio.dfggmc.top/">dfgg 工作室官网</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="copyrights">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <p>&copy; DFGGMC 2022 - 2024</p>
-                    </div>
-                    <div class="col-md-7 text-center">
-                        <p id="hitokoto">
-                            <a href="#" target="_blank" id="hitokoto_text">:D 获取中...</a>
-                        </p>
-                    </div>
-                    <div class="col-md-2 text-right">
-                        <p>
-                            <a target="_blank" href="https://studio.dfggmc.top/" title="dfgg工作室" class="external">DFGG
-                                Studio</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Javascript files-->
+    <div id="music-player-container"></div>
+    <div id="footer"></div>
     <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/deb46094a2.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"> </script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
-    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
-    <script>
-        fetch('https://v1.hitokoto.cn')
-            .then(response => response.json())
-            .then(data => {
-                const hitokoto = document.querySelector('#hitokoto_text')
-                hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
-                hitokoto.innerText = data.hitokoto
-            })
-            .catch(console.error)
-    </script>
-    <script src="js/front.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="/js/musicPlayer/mian.js"></script>
+    <script src="/js/front.js"></script>
+    <script>
+        $("#footer").load('/common/footer.html');
+
+        const musicPlayer = new MusicPlayerSettings();
+        musicPlayer.mian();
+    </script>
 </body>
 
 </html>

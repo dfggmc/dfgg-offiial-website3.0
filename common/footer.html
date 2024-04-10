@@ -1,0 +1,66 @@
+<footer class="main-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <a href="#" class="brand">联系方式：</a>
+                <ul class="contact-info list-unstyled">
+                    <li>
+                        <a href="mailto:dfggmc@aliyun.com">阿里云邮箱</a>
+                    </li>
+                </ul>
+                <ul class="social-icons list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://space.bilibili.com/1266698695" target="_blank" title="dfgg工作室">
+                            <i class="fa-brands fa-bilibili"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 ">
+                <h5>一些链接</h5>
+                <ul class="links list-unstyled">
+                    <li>
+                        <a href="https://bbs.dfggmc.top">dfgg bbs</a>
+                    </li>
+                    <li>
+                        <a href="https://space.bilibili.com/2068641947">服主b站首页</a>
+                    </li>
+                    <li>
+                        <a href="https://studio.dfggmc.top/">dfgg 工作室官网</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="copyrights">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <p>&copy; DFGGMC 2022 - 2024</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p id="hitokoto">
+                        <a href="#" target="_blank" id="hitokoto_text">:D 获取中...</a>
+                    </p>
+                </div>
+                <div class="col-md-4 text-right">
+                    <p>
+                        <a target="_blank" href="https://studio.dfggmc.top/" title="dfgg工作室" class="external">
+                            DFGG Studio 荣誉出品
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    fetch('https://v1.hitokoto.cn')
+        .then(response => response.json())
+        .then(data => {
+            const hitokoto = document.querySelector('#hitokoto_text')
+            hitokoto.href = `https://hitokoto.cn/?uuid=${data.uuid}`
+            hitokoto.innerText = data.hitokoto
+        })
+        .catch(console.error)
+</script>

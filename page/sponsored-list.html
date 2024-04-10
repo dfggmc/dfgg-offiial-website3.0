@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>dfggMC官网 - 赞助列表</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Custom Font Icons CSS-->
+    <link rel="stylesheet" href="/css/landy-iconfont.css">
+    <!-- Google fonts - Open Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.carousel.css">
+    <link rel="stylesheet" href="/vendor/owl.carousel/assets/owl.theme.default.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="/css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="/css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/img/logo/DFGG LOGO2.0.jpg">
+    <!-- animate.css -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <img class="logo" src="/img/logo/LOGO.svg" alt="">
+            <a href="/" class="navbar-brand">花风MC服务器</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler navbar-toggler-right">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto align-items-start align-items-lg-center">
+                    <li class="nav-item">
+                        <a href="/" class="nav-link link-scroll"><i class="fas fa-home"></i>首页</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-link" aria-hidden="true"></i>其他
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right animate__animated"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/page/sponsored-list.html">赞助名单</a>
+                            <a class="dropdown-item" href="/page/server-history.html">服务器历史</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" mdui-dialog="{target: '#music-player-settings'}">音乐播放器设置</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row block">
+                <div class="col-lg-9">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item">赞助名单</li>
+                    </ul>
+                    <h1>赞助名单</h1>
+                    <h2 class="lead">
+                        感谢这些人的赞助，有了你们dfgg服务器更有动力运行下去
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray">
+        <div class="container">
+            <div class="row block no-margin-bottom">
+                <div class="col-lg-9">
+                    <h3>奕晨</h3>
+                    <ul>
+                        <li>在服务器商店 里 赞助了0.01元</li>
+                    </ul>
+                    <h3>你鳝丝大跌</h3>
+                    <ul>
+                        <li>送了 peg195 一个Minecraft正版账号</li>
+                    </ul>
+                    <h3>小枫_QWQ</h3>
+                    <ul>
+                        <li>赞助了域名和服务器</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="scrollTop">
+        <div class="d-flex align-items-center justify-content-end">
+            <i class="fa-solid fa-arrow-up-long"></i>返回顶部
+        </div>
+    </div>
+    <div id="music-player-container"></div>
+    <div id="footer"></div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/deb46094a2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"> </script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="/js/musicPlayer/mian.js"></script>
+    <script src="/js/front.js"></script>
+    <script>
+        $("#footer").load('/common/footer.html');
+
+        const musicPlayer = new MusicPlayerSettings();
+        musicPlayer.mian();
+    </script>
+</body>
+
+</html>
