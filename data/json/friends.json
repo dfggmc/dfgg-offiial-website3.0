@@ -8,11 +8,15 @@
         "name": "Minecraft服务器集体宣传组织 (MSCPO)"
     },
     {
+        "link": "https://maserver.netlify.app",
+        "name": "MA-CAT社会主义联盟"
+    },
+    {
         "link": "https://www.lzdcraft.top/",
         "name": "LZD服务器"
     },
     {
-        "link": "https://haic.framer.ai/",
-        "name": "HaiCloud 1.19.2多玩法服务器"
+        "link": "https://yorasemc.framer.ai/",
+        "name": "Yorase多玩法服务器"
     }
 ]
