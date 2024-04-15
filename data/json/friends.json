@@ -1,6 +1,6 @@
 [
     {
-        "link": "https://peg195.pages.dev",
+        "link": "https://peg195.pages.dev/",
         "name": "peg195的博客"
     },
     {
@@ -8,7 +8,7 @@
         "name": "Minecraft服务器集体宣传组织 (MSCPO)"
     },
     {
-        "link": "https://maserver.netlify.app",
+        "link": "https://maserver.netlify.app/",
         "name": "MA-CAT社会主义联盟"
     },
     {
@@ -18,5 +18,9 @@
     {
         "link": "https://haic.framer.ai/",
         "name": "Yorase多玩法服务器"
+    },
+    {
+        "link": "https://zl.cn.eu.org/",
+        "name": "ZUYCraft（ZUYMCS）"
     }
 ]
