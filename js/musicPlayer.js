@@ -328,7 +328,7 @@ class MusicPlayer {
 
 
 
-const version = '0.1.0'
+const version = '0.1.1'
 const ContainerHtml = `
 <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/mdui/1.0.2/css/mdui.min.css">
 <link rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css">
@@ -714,7 +714,7 @@ function musicPlayerSaveSettings() {
 /**
  * 音乐播放器设置
  * @author XiaoFengQWQ
- * @version 0.1.0
+ * @version 0.1.1
  * @link https://github.com/XiaoFeng-QWQ/music-player
  */
 class MusicPlayerSettings {
@@ -722,7 +722,7 @@ class MusicPlayerSettings {
     /**
      * 主函数（入口函数）
      */
-    mian() {
+    main() {
         window.addEventListener('load', function () {
             //生成音乐播放器元素
             var element = document.getElementById('music-player-container');
