@@ -2,14 +2,14 @@
  * 生成服务器新闻
  */
 $.getJSON("data/json/serverNotice.json", function (data) {
-    var count = 0; // 初始化计数器
+    let count = 0; // 初始化计数器
 
     $.each(data, function (index, item) {
         if (count >= 5) {
             return false; // 超过5个元素时跳出循环
         }
 
-        var html;
+        let html;
         if (index % 2 === 0) {
             // 偶数元素结构
             html = `
@@ -46,7 +46,7 @@ $.getJSON("data/json/serverNotice.json", function (data) {
                     <p>
                         ${item.describe}
                         <br>
-                        <i class="fa-solid fa-clock"></i>${item.time}
+                        <i class="fas fa-clock"></i>${item.time}
                     </p>
                     <a href="${item.link}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-shadow btn-gradient">查看详情</a>
                 </div>
@@ -64,6 +64,26 @@ $.getJSON("data/json/serverNotice.json", function (data) {
     });
 });
 
+/**
+ * 生成服务器状态
+ */
+$.getJSON("https://api-minecraft_server_status.dfggmc.top/?ip=play.dfggmc.top", function (data) {
+    if (data.code === 200) {
+        const html = `
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">服务器信息</h5>
+                <p class="card-text">
+                    <strong>服务器MOTD：</strong> ${data.data.motd}<br>
+                    <strong>服务器版本：</strong> ${data.data.version}<br>
+                    <strong>在线玩家数量：</strong> ${data.data.players.online}/${data.data.players.max} <br>
+                </p>
+            </div>
+        </div>
+        `
+        $('#server-status').html(html)
+    }
+})
 
 /**
  * 生成友链
@@ -71,9 +91,9 @@ $.getJSON("data/json/serverNotice.json", function (data) {
 $.getJSON("data/json/friends.json", function (data) {
     $.each(data, function (index, item) {
         // 使用正则表达式匹配并提取域名部分
-        var domain = item.link.replace(/^https?:\/\//, '');
+        let domain = item.link.replace(/^https?:\/\//, '');
         domain = domain.replace(/\/$/, '');
-        var html = `
+        const html = `
         <div class="item col-lg-4 col-md-6">
             <div class="icon">
                 <img src="/img/friends/${domain}.gif" alt="${item.name}" class="img-fluid img-rounded img-circle">
@@ -94,7 +114,7 @@ $.getJSON("data/json/playerComments.json", function (data) {
     $('.player-comments-container').trigger('destroy.owl.carousel'); // 销毁原有的carousel
     $('.player-comments-container').html(''); // 清空原有的内容
     $.each(data, function (index, item) {
-        var html = `
+        const html = `
         <div class="item-holder">
             <div class="item">
                 <div class="avatar">
