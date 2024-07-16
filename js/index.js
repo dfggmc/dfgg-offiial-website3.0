@@ -16,7 +16,7 @@ $.getJSON("data/json/serverNotice.json", function (data) {
             <div class="row d-flex align-items-center">
                 <!-- cover -->
                 <div class="image col-lg-6">
-                    <img src="${item.cover}" alt="${item.title}" class="img-fluid">
+                    <img src="${item.cover}" alt="${item.title}" class="img-fluid rounded">
                 </div>
                 <div class="text col-lg-6">
                     <div class="icon">
@@ -52,7 +52,7 @@ $.getJSON("data/json/serverNotice.json", function (data) {
                 </div>
                 <!-- cover -->
                 <div class="image col-lg-6 order-1 order-lg-2">
-                    <img src="${item.cover}" alt="${item.title}" class="img-fluid">
+                    <img src="${item.cover}" alt="${item.title}" class="img-fluid rounded">
                 </div>
             </div>
             `;
