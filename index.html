@@ -238,6 +238,12 @@
 
         const musicPlayer = new MusicPlayerSettings();
         musicPlayer.main();
+
+        // 修复点击id="game-play"的选项卡就会跑到页面顶部等到动画结束后才返回原来的位置
+        $('.nav-tabs a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        });
     </script>
 </body>
 
