@@ -81,46 +81,14 @@
         .catch(console.error)
 </script>
 
-<!-- <style>
-    #RrgY7zBqZpD4Fx80OLN {
-        z-index: 999999999;
-        width: 534px;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    #RrgY7zBqZpD4Fx80OLN #post {
-        height: 270px;
-    }
-
-    #RrgY7zBqZpD4Fx80OLN #close {
-        position: relative;
-        bottom: 15px;
-    }
-
-    #RrgY7zBqZpD4Fx80OLN #close img {
-        float: right;
-    }
-</style>
-<div id="RrgY7zBqZpD4Fx80OLN" style="display: none;">
-    <div id="post"><img src="/img/6.jpg" /></div>
-    <div id="close" title="关闭这个烦人的广告！（"><img id="close_img" src="/img/关闭.svg" width="15px" height="15px" /></div>
-</div>
-<script>
-    const adClosedTime = document.cookie.split('; ').find(row => row.startsWith('adClosedTime='));
-    const shouldDisplayAd = !adClosedTime || (Date.now() - parseInt(adClosedTime.split('=')[1], 10)) > 900000;
-    if (shouldDisplayAd) {
-        const adElement = document.getElementById('RrgY7zBqZpD4Fx80OLN');
-        const closeButton = document.getElementById('close_img');
-        if (adElement && closeButton) {
-            adElement.style.display = 'block';
-            closeButton.onclick = () => {
-                const now = Date.now();
-                document.cookie = `adClosedTime=${now}; expires=${new Date(now + 900000).toUTCString()}; path=/`;
-                adElement.style.display = 'none';
-            };
-        }
-    }
-</script> -->
+<!-- 无障碍支持 -->
+<script id="rrbayJs" src="//wza.rrbay.com/js/wza.min.js?66e93dc121c01101cca3f28c" referrerpolicy="origin"
+    type="text/javascript"></script>
+<a id="wzayd" title="网站信息无障碍工具条" href="javascript:;" class="navbar-brand brand wzayd" accesskey="g" style="
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    padding: 10px;">
+    <i class="fa-brands fa-accessible-icon"></i>无障碍阅读
+</a>
