@@ -20,7 +20,6 @@ footer,
     position: relative;
 }
 
-footer::before,
 #welcome::before {
     content: '';
     position: absolute;
