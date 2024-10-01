@@ -513,15 +513,22 @@ function musicPlayerConfiguration(method, data) {
         expiresDate.setFullYear(expiresDate.getFullYear() + 10)
         document.cookie = `musicPlayerConfiguration=${JSON.stringify(config)}; expires=${expiresDate.toUTCString()}; path=/`
     }
+
+
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return parts.pop().split(';').shift();
+    }
+
     /**
      * 获取当前配置
      * @returns {Object} 当前配置对象
      */
     function getConfig() {
-        const cookieValue = document.cookie.replace(
-            /(?:(?:^|.*\s*)musicPlayerConfiguration\s*=\s*([^]*).*$)|^.*$/,
-            "$1"
-        )
+
+        const cookieValue = getCookie('musicPlayerConfiguration');
+
         if (cookieValue !== undefined && cookieValue.trim() !== "") {
             try {
                 return JSON.parse(cookieValue)

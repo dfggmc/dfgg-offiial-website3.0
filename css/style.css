@@ -267,7 +267,8 @@ nav.navbar {
     padding-bottom: 15px;
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-    background: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2.5px);
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
 }
@@ -1435,11 +1436,12 @@ h6,
 .h4,
 .h5,
 .h6 {
+    text-shadow: 0 .1875rem .3125rem #1c1f21;
     margin-bottom: 0.5rem;
     font-family: inherit;
     font-weight: 800;
     line-height: 1.1;
-    color: #2e324a;
+    color: #fff;
 }
 
 h1,

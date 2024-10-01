@@ -1,3 +1,63 @@
+/*
+* ==========================================================
+*     国庆配色开始
+* ==========================================================
+*/
+main {
+    margin-top: -20px;
+}
+
+a:hover {
+    color: rgb(255, 160, 122) !important;
+    /* 使用亮橙色，增加悬停时的亮度对比 */
+}
+
+footer,
+#welcome {
+    background: url(/img/国庆.jpg) center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+
+footer::before,
+#welcome::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(3px);
+    /* 毛玻璃效果，数值越高模糊度越大 */
+    background-color: rgba(255, 255, 255, 0.3);
+    /* 添加一个半透明白色覆盖层 */
+}
+
+/* 确保内部内容不会被毛玻璃效果影响 */
+footer>*,
+#welcome>* {
+    position: relative;
+    z-index: 2;
+}
+
+footer a,
+footer p,
+footer h5 {
+    color: white;
+}
+
+/*
+* ==========================================================
+*     国庆配色END
+* ==========================================================
+*/
+
+header {
+    z-index: 100;
+    position: relative;
+}
+
 .logo {
     width: 9.6rem;
     height: 2.4rem;

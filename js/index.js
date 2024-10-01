@@ -165,3 +165,64 @@ $.getJSON("data/json/playerComments.json", function (data) {
         }
     });
 });
+
+/**
+ * 点击特笑
+ * 原位置：https://juejin.cn/post/7106018120036253710#heading-1
+ * 小枫_QWQ润色
+ */
+$(function () {
+    let a_idx = 0;
+    const phrases = [
+        "❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤",
+        "❤平等❤", "❤公正❤", "❤自由❤", "❤友善❤",
+        "❤法治❤", "❤爱国❤", "❤敬业❤", "❤诚信❤",
+    ];
+
+    $(window).on('click', function (event) {
+        // 判断是否点击了 <a> 元素，如果是则直接返回，不触发效果
+        if ($(event.target).is('a')) {
+            return;
+        }
+        
+        const heart = $("<b></b>").text(phrases[a_idx]);
+        a_idx = (a_idx + 1) % phrases.length;
+        $("body").append(heart);
+
+        const f = 16;
+        let x = event.clientX - f / 2;
+        let y = event.clientY - f;
+        const c = randomColor();
+        let a = 1;
+        let s = 1.2;
+
+        const timer = setInterval(() => {
+            if (a <= 0) {
+                heart.remove();
+                clearInterval(timer);
+            } else {
+                heart.css({
+                    "font-size": `${f}px`,
+                    "cursor": "default",
+                    "position": "fixed",
+                    "color": c,
+                    "left": `${x}px`,
+                    "top": `${y}px`,
+                    "opacity": a,
+                    "transform": `scale(${s})`
+                });
+                y--;
+                a -= 0.016;
+                s += 0.002;
+            }
+        }, 15);
+    });
+
+    function randomColor() {
+        return `rgb(${random255()}, ${random255()}, ${random255()})`;
+    }
+
+    function random255() {
+        return Math.floor(Math.random() * 256);
+    }
+});
